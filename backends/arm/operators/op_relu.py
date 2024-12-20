@@ -8,6 +8,8 @@
 import executorch.backends.arm.tosa_quant_utils as tqutils
 import serializer.tosa_serializer as ts
 import torch.fx
+
+# pyre-fixme[21]: 'Could not find a module corresponding to import `executorch.backends.arm._passes.fold_qdq_with_annotated_qparams_pass`.'
 from executorch.backends.arm._passes.fold_qdq_with_annotated_qparams_pass import (
     get_output_qparams,
 )
